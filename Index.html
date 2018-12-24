@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        function Render()
+        {
+           //var greetings = "Hello Friends, have a cup of tea.";
+            //alert(greetings);   
+
+            var name = frmMain.txtName.value;
+            var email = frmMain.txtEmail.value;   
+            var address = frmMain.txtAddress.value;          
+            alert("Your Name: " + name + "\n Your Email: " + email + "\n Your Address: " + address);
+        }
+    </script>
+</head>
+<body>
+    <form name="frmMain">
+        <div>
+                <label>Name:</label>
+                <input type="text" name="txtName"/>
+        </div>
+        
+<div>
+        <label>Email:</label>
+        <input type="text" name="txtEmail"/>
+</div>
+
+<div>
+        <label>Address:</label>
+        <input type="text" name="txtAddress"/>
+</div>
+       
+<div>
+        <input type="submit" name="btnSubmit" value="Submit" onclick="Render()"/>
+    </div>
+
+     
+    </form>
+</body>
+</html>

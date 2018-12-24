@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+            function Calculate()
+            {
+                var numOne = frmMain.txtOneNumber.value;
+                var numTwo = frmMain.txtTwoNumber.value;
+                var result = parseInt(numOne) + parseInt(numTwo);
+
+                alert("The sum of " + numOne + " and " + numTwo + " is: " + result);
+            }
+        </script>
+</head>
+<body>
+        <form name="frmMain">
+                <div>
+                        <label>1st Number:</label>
+                        <input type="text" name="txtOneNumber"/>
+                </div>
+                
+        <div>
+                <label>2nd Number:</label>
+                <input type="text" name="txtTwoNumber"/>
+        </div>
+        
+                     
+        <div>
+                <input type="submit" name="btnSubmit" value="Submit" onclick="Calculate()"/>
+            </div>
+        
+             
+            </form>
+</body>
+</html>
